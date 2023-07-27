@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+
+*::before,
+*::after,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.5;
+    overflow-x: hidden;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 autO;
+    margin-top: 10vh;
+    padding: 1rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, .5);
+    position: relative;
+    background: #fff;
+}
+
+.container h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: #2c3e50;
+}
+
+.container .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .menu button{
+    border: none;
+    width: 50px;
+    max-width: 50px;
+    padding: .75rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    background: #2c3e50;
+    box-shadow: .5rem 0.5rem 1rem rgba(0, 0, 0, .5);
+    transition: all .25s ease-in;
+}
+.container .menu button:focus,
+.container .menu button:active{
+   outline: none;
+}
+
+.container .menu button:hover{
+    box-shadow: none;
+    top: .5rem;
+    left: .5rem;
+    transition: all .25s ease-in;
+}
+.container .menu button i {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.container .menu .hearts i.fas{
+    color: #e31b23;
+    font-size: 1.5rem;
+    transition: all .25s;
+}
+
+.container .menu .hearts i.far{
+    font-size: 1.5rem;
+    transition: all .25s;
+}
+
+.container .container_card{
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: .75rem auto;
+}
+
+.container .container_card .card{
+    width: 25%;
+    height: 150px;
+    background: #2c3e50;
+    box-shadow: 1rem 0 .5rem rgba(0, 0, 0, .5);
+    margin: 1rem 1rem;
+    padding: 2rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .container_card .card i{
+    color: #fff;
+    font-size: 3rem;
+    z-index: -2;
+    transform: scale(0);
+    transition: all .25s ease-in;
+}
+
+.container .container_card .card i.visible {
+    z-index: 1;
+    transform: scale(1);
+    transition: all .25s ease-in;
+}
+
+.gameover,
+.winner{
+    z-index: -999;
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all .25s ease-in;
+}
+
+.gameover_active,
+.winner_active {
+    z-index: 10;
+    transform: scale(1);
+    transition: all .25s ease-in;
+}
+
+.btn{
+    background: #fff;
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5rem;
+    width: 30%;
+    border:none;
+    margin: .5rem auto;
+    border-radius: 4px;
+    padding: .75rem 1rem;
+    cursor: pointer;
+}
+
+.btn:focus,
+.btn:active{
+    outline: none;
+}
