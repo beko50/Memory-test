@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Match Game - By Alex Gioffre'</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+</head>
+<body>
+    <div class="gameover" id="gameOver"><h1>You Lose!</h1> <button class="btn" id="playAgain">Play Again</button></div>
+    <div class="winner" id="winner"><h1>You Win!</h1> <p>Moves: <span id="movesUsed"></span></p> <p>Time: <span id="timeSpent"></span></p> <button class="btn" id="againPlay">Play Again</button></div>
+    <div class="container">
+        <h1>Match Game</h1>
+        <div class="menu">
+                <div>
+                        <button id="play"><i class="fas fa-play"></i></button>
+                        <button id="stop"><i class="fas fa-undo"></i></button>
+                </div>
+                <div>Timer: <span id="timer"><time>00:00:00</time></span></div>
+                <p class="moves" >Moves: <span id="moves"></span> </p>
+                <div class="hearts"  id="hearts">
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                </div>
+        </div>
+        <div class="container_card" id="board">
+            <div class="card"><i class="fab fa-angellist visible"></i></div>
+            <div class="card"><i class="fas fa-apple-alt visible"></i></div>
+            <div class="card"><i class="fas fa-bacon visible"></i></div>
+            <div class="card"><i class="fas fa-baseball-ball visible"></i></div>
+            <div class="card"><i class="fas fa-paper-plane visible"></i></div>
+            <div class="card"><i class="fas fa-cross visible"></i></div>
+
+            <div class="card"><i class="fas fa-bacon visible"></i></div>
+            <div class="card"><i class="fas fa-baseball-ball visible"></i></div>
+            <div class="card"><i class="fas fa-apple-alt visible"></i></div>
+            <div class="card"><i class="fab fa-angellist visible"></i></div>
+            <div class="card"><i class="fas fa-paper-plane visible"></i></div>
+            <div class="card"><i class="fas fa-cross visible"></i></div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
