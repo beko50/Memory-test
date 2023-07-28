@@ -152,7 +152,7 @@ cards.forEach(card => {
                       second.classList.remove("visible");
                       first="";
                       second="";
-                     }, 500)
+                     }, 1000)
                      if(heart === 0){
                          gameOver.classList.add("gameover_active");
                      }
