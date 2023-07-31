@@ -55,7 +55,7 @@ body{
     border-radius: 5px;
     cursor: pointer;
     position: relative;
-    background: #2c3e50;
+    background: green;
     box-shadow: .5rem 0.5rem 1rem rgba(0, 0, 0, .5);
     transition: all .25s ease-in;
 }

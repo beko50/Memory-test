@@ -71,7 +71,7 @@ function startGame() {
             cards.forEach(card => {
                 card.firstElementChild.classList.remove("visible");
             })
-        }, 200);
+        }, 2000);
         startTimer();
     }
 };
@@ -152,7 +152,7 @@ cards.forEach(card => {
                       second.classList.remove("visible");
                       first="";
                       second="";
-                     }, 1000)
+                     }, 500)
                      if(heart === 0){
                          gameOver.classList.add("gameover_active");
                      }
